@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basic 1</title>
+</head>
+<!-- <body background="다운로드.jpg"> -->
+<!-- <body style="background-color: gray;"> -->
+<body>
+  <h2>글자 스타일링 예제</h2>
+  <p style="color: blue">1. 글자색 변경</p>
+  <p style="background-color: aqua;">2. 배경색 변경</p>
+  <p style="font-size: 20px;">3. 글자크기 변경</p>
+  <p style="background-color: blue; font-size: 25px; text-align: center;">4. 복합스타일링</p>
+
+  <h2>link와 이미지 삽입</h2>
+  <!-- _blanck : 새 탭으로 이동 -->
+  <div>
+    <a href="https://www.naver.com/" target="_blank">네이버</a>
+  </div>
+  <div>
+    <a href="https://www.google.com/" target="_blank">
+      <!-- alt : 이미지가 깨졌을 때 대체 문자열, 시각장애인용 reader기에서 인식 -->
+      <img src="data:image/png;base64,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"
+      alt="구글아이콘" width="100px" height="100px" style="border: 3px solid black">
+    </a>
+  </div>
+
+  <h2>리스트(ol-순서가 있는, ul-순서가 없는)</h2>
+  <ol style="list-style-type: upper-roman;">
+    <li>아이템A</li>
+    <li>아이템B</li>
+    <li>아이템C</li>
+  </ol>
+  <ul style="list-style-type: square;">
+    <li>아이템A</li>
+    <li>아이템B</li>
+    <li>아이템C</li>
+  </ul>
+  <h2>테이블 예제</h2>
+  <table border="1" style="border-collapse: collapse;">
+    <caption>테이블</caption>
+    <thead>
+      <tr>
+        <th>컬럼1</th>
+        <th>컬럼2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>데이터1-A</td>
+        <td>데이터1-B</td>
+      </tr>
+      <tr>
+        <td>데이터2-A</td>
+        <td>데이터2-B</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 테이블 만들기 실습 -->
+  <!-- 테이블 post, 컬럼명 : id, title, contents, author_email -->
+   <table border="1" style="border-collapse: collapse;">
+    <caption>테이블 post</caption>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>contents</th>
+        <th>author_email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>title1</td>
+        <td>contents1</td>
+        <td>@naver.com</td>
+      </tr>
+    </tbody>
+   </table>
+</body>
+</html>
