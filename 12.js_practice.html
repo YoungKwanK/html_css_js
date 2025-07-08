@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계산기</title>
+</head>
+<body>
+  <select name="calculate" id="calculate">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <label for="num1">첫번째 숫자</label>
+  <input type="number" id="num1">
+  <label for="num1">두번째 숫자</label>
+  <input type="number" id="num2">
+  <button onclick="calculate()">실행</button>
+  <p id="result">결과</p>
+  <script>
+    function calculate(){
+      let num1 = Number(document.getElementById("num1").value);
+      let num2 = Number(document.getElementById("num2").value);
+      let a = document.getElementById("calculate").value;
+      if(a === "+"){
+        let element = document.getElementById("result").innerHTML=num1+num2;
+      }else if(a === "-"){
+        let element = document.getElementById("result").innerHTML=num1-num2;
+      }else if(a=== "*"){
+        let element = document.getElementById("result").innerHTML=num1*num2;
+      }else{
+        let element = document.getElementById("result").innerHTML=num1/num2;
+      }
+    }
+  </script>
+</body>
+</html>
